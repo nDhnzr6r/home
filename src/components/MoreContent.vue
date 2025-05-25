@@ -1,5 +1,5 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <div class="more-content">用代码表达言语的魅力，用代码书写山河的壮丽。</div>
 </template>
 
 <style lang="scss" scoped>
