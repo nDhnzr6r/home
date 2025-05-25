@@ -19,7 +19,7 @@
         <div class="version">
           <div class="num">v&nbsp;{{ config.version }}</div>
           <el-tooltip content="Github 源代码仓库" placement="right" :show-arrow="false">
-            <github-one class="github" theme="outline" size="24" @click="jumpTo(config.githubnd)" />
+            <github-one class="github" theme="outline" size="24" @click="jumpTo(config.github)" />
           </el-tooltip>
         </div>
         <el-card class="update">
