@@ -19,7 +19,7 @@
         <div class="version">
           <div class="num">v&nbsp;{{ config.version }}</div>
           <el-tooltip content="Github 源代码仓库" placement="right" :show-arrow="false">
-            <github-one class="github" theme="outline" size="24" @click="jumpTo(config.github)" />
+            <github-one class="github" theme="outline" size="24" @click="jumpTo(config.githubnd)" />
           </el-tooltip>
         </div>
         <el-card class="update">
@@ -76,8 +76,8 @@ const siteUrl = computed(() => {
 const upData = reactive({
   new: [
     "nDhnzr6r进行更改",
-  ]，
-  fix: ["修复天气 API", "时光胶囊显示错误", "移动端动画及细节", "图标更换为 IconPark"],
+  ],
+  //fix: ["修复天气 API", "时光胶囊显示错误", "移动端动画及细节", "图标更换为 IconPark"],
 });
 
 // 跳转源代码仓库
