@@ -107,12 +107,13 @@ onMounted(() => {
 
   // 控制台输出
   const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
-  const styleTitle2 = "font-size: 20px;font-weight: 600;color: rgb(86,36,37);";
+  const styleTitle2 = "font-size: 20px;font-weight: 600;color: rgb(209,44,37);";
   const styleTitle3 = "font-size:12px;color: rgb(244,167,89);";
   const styleContent = "color: rgb(30,152,255);";
   const styleEssay = "color: rgb(30,152,255);";
   const title1 = "nDhnzr6rの主页";
-  const title2 = "用代码表达言语的魅力，用代码书写山河的壮丽。";
+  const title2 = `
+    用代码表达言语的魅力，用代码书写山河的壮丽。`;
   const title3 = `
 ███╗   ██╗██████╗ ██╗  ██╗███╗   ██╗███████╗██████╗  ██████╗ ██████╗ 
 ████╗  ██║██╔══██╗██║  ██║████╗  ██║╚══███╔╝██╔══██╗██╔════╝ ██╔══██╗
