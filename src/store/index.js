@@ -6,7 +6,7 @@ export const mainStore = defineStore("main", {
       imgLoadStatus: false, // 壁纸加载状态
       innerWidth: null, // 当前窗口宽度
       coverType: "0", // 壁纸种类
-      siteStartShow: false, // 建站日期显示
+      siteStartShow: true, // 建站日期显示
       musicClick: false, // 音乐链接是否跳转
       musicIsOk: false, // 音乐是否加载完成
       musicVolume: 0, // 音乐音量;
@@ -21,7 +21,7 @@ export const mainStore = defineStore("main", {
       playerArtist: null, // 当前播放歌手名
       playerLrc: "歌词加载中", // 当前播放歌词
       playerLrcShow: true, // 是否显示底栏歌词
-      footerBlur: true, // 底栏模糊
+      footerBlur: false, // 底栏模糊
       playerAutoplay: false, // 是否自动播放
       playerLoop: "all", // 循环播放 "all", "one", "none"
       playerOrder: "list", // 循环顺序 "list", "random"
