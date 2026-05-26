@@ -78,6 +78,11 @@ const siteUrl = computed(() => {
 // 更新日志
 const upData = reactive([
   {
+    version: "1.1.4",
+    new: ["更换标语字体为品如手写体"],
+    fix: [],
+  },
+  {
     version: "1.1.3",
     new: ["新增底栏显示开关"],
     fix: ["删除无用截图文件"],
