@@ -29,13 +29,16 @@
             </div>
           </template>
           <div class="upnote">
-            <div v-for="item in upData.new" :key="item" class="uptext">
-              <add-one theme="outline" size="22" />
-              {{ item }}
-            </div>
-            <div v-for="item in upData.fix" :key="item" class="uptext">
-              <bug theme="outline" size="22" />
-              {{ item }}
+            <div v-for="ver in upData" :key="ver.version" class="ver-block">
+              <div class="ver-title">v{{ ver.version }}</div>
+              <div v-for="item in ver.new" :key="item" class="uptext">
+                <add-one theme="outline" size="18" />
+                {{ item }}
+              </div>
+              <div v-for="item in ver.fix" :key="item" class="uptext">
+                <bug theme="outline" size="18" />
+                {{ item }}
+              </div>
             </div>
           </div>
         </el-card>
@@ -73,13 +76,18 @@ const siteUrl = computed(() => {
 });
 
 // 更新日志
-const upData = reactive({
-  new: [
-    "重写天气加载逻辑",
-    "新增底栏显示开关",
-  ],
-  fix: ["删除无用截图文件"],
-});
+const upData = reactive([
+  {
+    version: "1.1.3",
+    new: ["新增底栏显示开关"],
+    fix: ["删除无用截图文件"],
+  },
+  {
+    version: "1.1.2",
+    new: ["重写天气加载逻辑"],
+    fix: [],
+  },
+]);
 
 // 跳转源代码仓库
 const jumpTo = (url) => {
@@ -196,20 +204,31 @@ const jumpTo = (url) => {
             height: calc(100% - 56px);
             overflow-y: auto;
 
+            .ver-block {
+              margin-bottom: 16px;
+              &:last-child { margin-bottom: 0; }
+            }
+
+            .ver-title {
+              font-size: 0.85rem;
+              color: #ffffff80;
+              margin-bottom: 6px;
+            }
+
             .uptext {
               display: flex;
               flex-direction: row;
               align-items: center;
-              padding-bottom: 16px;
+              padding-bottom: 8px;
 
               &:nth-last-of-type(1) {
                 padding: 0;
               }
 
               .i-icon {
-                width: 22px;
-                height: 22px;
-                margin-right: 8px;
+                width: 18px;
+                height: 18px;
+                margin-right: 6px;
               }
             }
           }

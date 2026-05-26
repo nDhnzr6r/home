@@ -13,5 +13,5 @@
 - `.env` — 高德 Key 等环境变量
 
 ## 新增功能时
-- 将改动内容写入 `src/views/MoreSet/index.vue` 的 `upData.new`（新增）或 `upData.fix`（修复）数组中
+- 在 `upData` 数组**最前面**插入新版本对象：`{ version: "x.y.z", new: ["新增项"], fix: ["修复项"] }`
 - 更新 `package.json` 的 `version` 版本号
