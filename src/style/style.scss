@@ -56,6 +56,12 @@ a:hover {
   src: url("/font/UnidreamLED.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "PinRu";
+  font-display: swap;
+  src: url("/font/品如手写体.ttf") format("truetype");
+}
+
 // 基础样式
 #app {
   position: fixed;
