@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" :class="store.footerBlur ? 'blur' : null">
+  <footer id="footer" v-if="store.footerShow" :class="store.footerBlur ? 'blur' : null">
     <Transition name="fade" mode="out-in">
       <div v-if="!store.playerState || !store.playerLrcShow" class="power">
         <span>
@@ -48,6 +48,11 @@ import config from "@/../package.json";
 
 const store = mainStore();
 const fullYear = new Date().getFullYear();
+
+// 关闭底栏显示时同步关闭模糊
+watch(() => store.footerShow, (val) => {
+  if (!val) store.footerBlur = false;
+});
 
 // 加载配置数据
 // const siteStartDate = ref(import.meta.env.VITE_SITE_START);

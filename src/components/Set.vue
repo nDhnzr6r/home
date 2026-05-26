@@ -48,6 +48,15 @@
             :inactive-icon="CloseSmall"
           />
         </div>
+        <div class="item">
+          <span class="text">底栏显示</span>
+          <el-switch
+            v-model="footerShow"
+            inline-prompt
+            :active-icon="CheckSmall"
+            :inactive-icon="CloseSmall"
+          />
+        </div>
       </el-collapse-item>
       <el-collapse-item title="播放器配置" name="3">
         <div class="item">
@@ -98,6 +107,7 @@ const {
   musicClick,
   playerLrcShow,
   footerBlur,
+  footerShow,
   playerAutoplay,
   playerOrder,
   playerLoop,

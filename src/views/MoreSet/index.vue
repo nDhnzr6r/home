@@ -75,9 +75,10 @@ const siteUrl = computed(() => {
 // 更新日志
 const upData = reactive({
   new: [
-    "nDhnzr6r进行更改",
+    "重写天气加载逻辑",
+    "新增底栏显示开关",
   ],
-  //fix: ["修复天气 API", "时光胶囊显示错误", "移动端动画及细节", "图标更换为 IconPark"],
+  fix: ["删除无用截图文件"],
 });
 
 // 跳转源代码仓库

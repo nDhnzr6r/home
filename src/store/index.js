@@ -22,6 +22,7 @@ export const mainStore = defineStore("main", {
       playerLrc: "歌词加载中", // 当前播放歌词
       playerLrcShow: true, // 是否显示底栏歌词
       footerBlur: false, // 底栏模糊
+      footerShow: true, // 底栏显示
       playerAutoplay: false, // 是否自动播放
       playerLoop: "all", // 循环播放 "all", "one", "none"
       playerOrder: "list", // 循环顺序 "list", "random"
@@ -85,6 +86,7 @@ export const mainStore = defineStore("main", {
       "musicClick",
       "playerLrcShow",
       "footerBlur",
+      "footerShow",
       "playerAutoplay",
       "playerLoop",
       "playerOrder",
