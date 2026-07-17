@@ -78,6 +78,11 @@ const siteUrl = computed(() => {
 // 更新日志
 const upData = reactive([
   {
+    version: "1.1.5",
+    new: ["品如手写体子集化压缩：6MB → 11KB，修复首次加载无字体问题"],
+    fix: [],
+  },
+  {
     version: "1.1.4",
     new: ["更换标语字体为品如手写体"],
     fix: [],
